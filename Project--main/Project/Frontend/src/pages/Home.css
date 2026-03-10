@@ -1,0 +1,85 @@
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.faculty-photo {
+    border-bottom: 5px solid #007bff;
+    border-top: 5px solid #007bff;
+}
+
+.card-body h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.list-group-item {
+    border: none;
+    padding: 10px 0;
+}
+
+.transition-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.transition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .card-body h4 {
+        font-size: 1.2rem;
+    }
+}
+
+.faculty-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transition-card {
+    transition: all 0.3s ease;
+}
+
+.transition-card:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1.animated-title {
+    animation: fadeIn 2s ease-in-out;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
